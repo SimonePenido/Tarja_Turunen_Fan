@@ -1,0 +1,125 @@
+body {
+    background-color: #737373;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #110303
+    }
+
+.cabecalho {
+    background-image: url(img/tarjapng.png);
+    height: 800px;
+    background-size: cover;
+    padding-top: 1px;
+    background-position: right center;
+	background-attachment: fixed;
+}
+
+.div-cabecalho{
+    color: #5f0404;
+    margin: 250px auto 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+.div-cabecalho  h1{
+    font-size: 80px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px rgba(73, 7, 7, 0.5);
+}
+
+.div-cabecalho a{
+    background-color: #A67B7B;
+    color: #5f0404;
+    text-decoration: none;
+    padding: 2px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    }
+
+.div-cabecalho a:hover{
+    background-color: #5f0404;
+    color: #A67B7B;
+}
+
+.cabecalho nav ul{
+    margin: 25px 40px 0 0;
+    text-align: right;
+}
+
+.cabecalho nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 15px;
+}
+
+.cabecalho nav a{
+    background-color: #A67B7B;
+    color: #5f0404;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.cabecalho nav a:hover{
+    background-color: #5f0404;
+    text-decoration: none;
+    color: #A67B7B;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+section{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+article{
+    background-color: #ad8a8a;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+article  h2{
+    background-color: #5c5757;
+    color: #5f0404;
+    text-transform: uppercase;
+    margin-top: 0;
+    text-align: center;
+}
+
+.config-img{
+    height: 80px;
+    float: left;
+    padding-right: 5px;
+}
+
+img:hover{
+    transform: scale(1.2);
+}
+
+/*p{
+    text-align: justify;
+    line-height: 28px;
+    margin-right: 15px;
+    padding: 20px;
+    background-color: #A67B7B;
+}*/
+
+footer{
+    text-align: center;
+    color: #A67B7B; 
+    font-weight: bold;
+    font-size: 13px;
+    padding: 8px;
+    background-color: #5f0404;
+}
