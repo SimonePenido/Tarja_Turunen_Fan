@@ -19,6 +19,8 @@ body {
 	display: flex;
 	width:100%
 	height: auto;
+	background-position: right;
+	align-items: right;
 	}
 }
 
