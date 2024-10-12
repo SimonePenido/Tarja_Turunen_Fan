@@ -14,15 +14,6 @@ body {
 	background-attachment: fixed;
 }
 
-@media screen and (max-width: 480px){
-	.cabecalho {
-	display: flex;
-	width: 200px;
-	height: auto;
-	background-position: right;
-	align-items: right;
-	}
-}
 
 .div-cabecalho{
     color: #5f0404;
