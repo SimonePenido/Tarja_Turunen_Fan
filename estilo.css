@@ -10,8 +10,8 @@ body {
     height: 800px;
     background-size: cover;
     padding-top: 1px;
-    background-position: right center;
-	background-attachment: fixed;
+    background-position: right;
+    background-attachment: fixed;
 }
 
 
