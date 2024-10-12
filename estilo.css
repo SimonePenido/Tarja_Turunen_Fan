@@ -1,9 +1,10 @@
+/* Base CSS */
 body {
     background-color: #737373;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #110303
-    }
+    color: #110303;
+}
 
 .cabecalho {
     background-image: url(img/tarjapng.png);
@@ -14,21 +15,20 @@ body {
     background-attachment: fixed;
 }
 
-
-.div-cabecalho{
+.div-cabecalho {
     color: #5f0404;
     margin: 250px auto 0 auto;
     width: 90%;
     text-align: center;
 }
 
-.div-cabecalho  h1{
+.div-cabecalho h1 {
     font-size: 80px;
     text-transform: uppercase;
     text-shadow: 3px 3px rgba(73, 7, 7, 0.5);
 }
 
-.div-cabecalho a{
+.div-cabecalho a {
     background-color: #A67B7B;
     color: #5f0404;
     text-decoration: none;
@@ -36,19 +36,19 @@ body {
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: bold;
-    }
+}
 
-.div-cabecalho a:hover{
+.div-cabecalho a:hover {
     background-color: #5f0404;
     color: #A67B7B;
 }
 
-.cabecalho nav ul{
+.cabecalho nav ul {
     margin: 25px 40px 0 0;
     text-align: right;
 }
 
-.cabecalho nav ul li{
+.cabecalho nav ul li {
     list-style-type: none;
     display: inline-block;
     margin-left: 15px;
@@ -57,7 +57,7 @@ body {
     font-size: 15px;
 }
 
-.cabecalho nav a{
+.cabecalho nav a {
     background-color: #A67B7B;
     color: #5f0404;
     text-decoration: none;
@@ -65,7 +65,7 @@ body {
     border-radius: 5px;
 }
 
-.cabecalho nav a:hover{
+.cabecalho nav a:hover {
     background-color: #5f0404;
     text-decoration: none;
     color: #A67B7B;
@@ -73,24 +73,29 @@ body {
     border-radius: 5px;
 }
 
-main{
+main {
     width: 90%;
     margin: auto;
 }
 
-section{
+section {
     margin-top: 40px;
     margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-article{
+article {
     background-color: #ad8a8a;
     padding: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
+    flex: 1 1 300px;
+    margin: 10px;
 }
 
-article  h2{
+article h2 {
     background-color: #5c5757;
     color: #5f0404;
     text-transform: uppercase;
@@ -98,26 +103,79 @@ article  h2{
     text-align: center;
 }
 
-p{
+p {
     text-align: justify;
     line-height: 28px;
 }
 
-.config-img{
+.config-img {
     height: 80px;
     float: left;
     padding-right: 5px;
 }
 
-img:hover{
+img:hover {
     transform: scale(1.2);
 }
 
-footer{
+footer {
     text-align: center;
-    color: #A67B7B; 
+    color: #A67B7B;
     font-weight: bold;
     font-size: 13px;
     padding: 8px;
     background-color: #5f0404;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .cabecalho {
+        background-size: contain;
+        height: 700px;
+    }
+
+    .div-cabecalho h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        background-size: cover;
+        height: 500px;
+    }
+
+    .div-cabecalho h1 {
+        font-size: 40px;
+    }
+
+    nav ul {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho {
+        background-position: center;
+        background-size: contain;
+        height: 400px;
+    }
+
+    .div-cabecalho h1 {
+        font-size: 30px;
+    }
+
+    .config-img {
+        height: 50px;
+    }
+
+    article {
+        flex: 1 1 100%;
+    }
 }
