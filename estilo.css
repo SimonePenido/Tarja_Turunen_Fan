@@ -8,7 +8,7 @@ body {
 
 .cabecalho {
     background-image: url(img/tarjapng.png);
-    height: 800px;
+    height: 40em;
     background-size: cover;
     padding-top: 1px;
     background-position: right;
@@ -79,7 +79,7 @@ body {
 }
 
 main {
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
@@ -88,7 +88,7 @@ section {
     margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 article {
@@ -96,7 +96,7 @@ article {
     padding: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
-    flex: 1 1 300px;
+    flex: 300px;
     margin: 10px;
 }
 
@@ -123,12 +123,41 @@ img:hover {
     transform: scale(1.2);
 }
 
+
+
+.body_slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider {
+    display: grid;
+    width: 100%;
+    height: 90vh;
+    position: center center;
+    }
+
+#slider img {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 400ms;
+    border-radius: 10px;
+}
+
+#slider img.selected {
+    opacity: 1;
+}
+
 footer {
     text-align: center;
     color: #A67B7B;
     font-weight: bold;
     font-size: 13px;
-    padding: 8px;
+    padding: 1em;
     background-color: #5f0404;
 }
 
