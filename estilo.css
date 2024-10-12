@@ -26,6 +26,8 @@ body {
     font-size: 80px;
     text-transform: uppercase;
     text-shadow: 3px 3px rgba(73, 7, 7, 0.5);
+    padding: 0.5em;
+    letter-spacing: 1px;
 }
 
 .div-cabecalho a {
@@ -36,6 +38,8 @@ body {
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: bold;
+    padding: 0.5em;
+    letter-spacing: 1px;
 }
 
 .div-cabecalho a:hover {
@@ -55,13 +59,14 @@ body {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 15px;
+    padding: 3px;
 }
 
 .cabecalho nav a {
     background-color: #A67B7B;
     color: #5f0404;
     text-decoration: none;
-    padding: 4px;
+    padding: 5px;
     border-radius: 5px;
 }
 
