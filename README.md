@@ -4,7 +4,7 @@
 
 Bem-vindo(a) à minha landing page criada como parte do desafio **{Elas Na Tech - 2023}**, em homenagem à talentosa cantora **Tarja Turunen**. Esse projeto tem como objetivo praticar e demonstrar habilidades em **HTML** e **CSS**, focando em responsividade e layout moderno.
 
-> [Confira a página ao vivo aqui!](https://simonepenido.github.io/Tarja_Turunen_Fan/)
+> [Confira aqui!](https://simonepenido.github.io/Tarja_Turunen_Fan/)
 
 ## 📝 **Resumo do Projeto**
 
