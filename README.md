@@ -8,7 +8,7 @@ Bem-vindo(a) à minha landing page criada como parte do desafio **{Elas Na Tech 
 
 ## 📝 **Resumo do Projeto**
 
-Este projeto foi desenvolvido para exibir uma homenagem à artista Tarja Turunen, combinando imagens e informações estilizadas sobre sua carreira e discografia. Ele faz parte do meu aprendizado contínuo e está focado em técnicas de design frontend.
+Este projeto foi desenvolvido para exibir uma homenagem à artista Tarja Turunen, combinando imagens e informações estilizadas sobre sua carreira e discografia. Ele faz parte do meu aprendizado contínuo e está focado em técnicas de design frontend, refatorando o projeto original realizado como parte das atividades do curso Elas Na Tech 2023.
 
 ## 🚀 **Tecnologias Utilizadas**
 
