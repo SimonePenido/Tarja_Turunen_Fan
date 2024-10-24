@@ -1,10 +1,17 @@
-/* Base CSS */
+html, body {
+    height: 100%;
+
+}
+
 body {
     background-color: #737373;
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: #110303;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 
 .cabecalho {
     background-image: url(img/tarjapng.png);
@@ -13,12 +20,13 @@ body {
     padding-top: 1px;
     background-position: right;
     background-attachment: fixed;
+
 }
 
 .div-cabecalho {
     color: #5f0404;
     margin: 250px auto 0 auto;
-    width: 90%;
+    width: 100%;
     text-align: center;
 }
 
@@ -26,26 +34,10 @@ body {
     font-size: 80px;
     text-transform: uppercase;
     text-shadow: 3px 3px rgba(73, 7, 7, 0.5);
-    padding: 0.5em;
+    padding: 1em;
     letter-spacing: 1px;
 }
 
-.div-cabecalho a {
-    background-color: #A67B7B;
-    color: #5f0404;
-    text-decoration: none;
-    padding: 2px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 0.5em;
-    letter-spacing: 1px;
-}
-
-.div-cabecalho a:hover {
-    background-color: #5f0404;
-    color: #A67B7B;
-}
 
 .cabecalho nav ul {
     margin: 25px 40px 0 0;
@@ -59,14 +51,14 @@ body {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 15px;
-    padding: 3px;
+    padding: 1.2em;
 }
 
 .cabecalho nav a {
     background-color: #A67B7B;
     color: #5f0404;
     text-decoration: none;
-    padding: 5px;
+    padding: 0.5em 1em;
     border-radius: 5px;
 }
 
@@ -79,13 +71,10 @@ body {
 }
 
 main {
-    width: 100%;
-    margin: auto;
+    flex: 1;
 }
 
 section {
-    margin-top: 40px;
-    margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -106,11 +95,14 @@ article h2 {
     text-transform: uppercase;
     margin-top: 0;
     text-align: center;
+    padding: 0.3em;
 }
 
 p {
     text-align: justify;
     line-height: 28px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .config-img {
@@ -119,11 +111,13 @@ p {
     padding-right: 5px;
 }
 
-img:hover {
+.config-img:hover {
     transform: scale(1.2);
 }
 
-
+.img:hover {
+    transform: scale(1.02);
+}
 
 .body_slider {
     display: flex;
@@ -131,10 +125,18 @@ img:hover {
     align-items: center;
 }
 
+iframe {
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 #slider {
     display: grid;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: center center;
     }
 
@@ -143,7 +145,7 @@ img:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: scale-down;
     transition: opacity 400ms;
     border-radius: 10px;
 }
@@ -152,14 +154,6 @@ img:hover {
     opacity: 1;
 }
 
-footer {
-    text-align: center;
-    color: #A67B7B;
-    font-weight: bold;
-    font-size: 13px;
-    padding: 1em;
-    background-color: #5f0404;
-}
 
 /* Media Queries */
 @media (max-width: 1200px) {
@@ -198,7 +192,7 @@ footer {
     .cabecalho {
         background-position: center;
         background-size: contain;
-        height: 400px;
+        height: max-content;
     }
 
     .div-cabecalho h1 {
@@ -212,4 +206,40 @@ footer {
     article {
         flex: 1 1 100%;
     }
+
+    .body_slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #slider {
+        display: grid;
+        position: center center;
+    }
+
+    #slider img {
+        opacity: 0;
+        position: absolute;
+        width: 80%;
+        height: auto;
+        object-fit: scale-down;
+        transition: opacity 400ms;
+        border-radius: 10px;
+    }
+}
+
+
+footer {
+    text-align: center;
+    color: #A67B7B;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px;
+    background-color: #5f0404;
+}
+
+footer a {
+    color: #A67B7B;
+    text-decoration: none;
 }
