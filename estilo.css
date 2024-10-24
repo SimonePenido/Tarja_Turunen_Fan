@@ -231,12 +231,16 @@ iframe {
 
 
 footer {
-    text-align: center;
     color: #A67B7B;
     font-weight: bold;
     font-size: 13px;
     padding: 10px;
     background-color: #5f0404;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
 }
 
 footer a {
